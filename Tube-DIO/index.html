@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Clone - Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-left">
+            <i class="fas fa-bars"></i>
+            <div class="logo">
+                <i class="fab fa-youtube" style="color: red;"></i>
+                <span>YouTube</span>
+            </div>
+        </div>
+
+        <div class="nav-center">
+            <input type="text" placeholder="Pesquisar">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="nav-right">
+            <i class="fas fa-video"></i>
+            <i class="fas fa-bell"></i>
+            <div class="user-profile"></div>
+        </div>
+    </header>
+
+    <main class="container">
+       
+
+       <section class="container">
+    <section class="main-content">
+        <div class="video-player">
+            <div class="video-placeholder"><iframe width="854" height="500" height="315" src="https://www.youtube.com/embed/3wxtRsB0FuQ?si=eSY4W1doDS3DNwDX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <h1 class="main-title">Curso de Programação (TI em Geral) GRÁTIS - DIO 🚀</h1>
+            <div class="video-stats-bar">1.2M visualizações • há 5 horas</div>
+        </div>
+
+        <div class="comments-section">
+            <h3>457 Comentários</h3>
+            <div class="add-comment">
+                <div class="user-avatar-mini"></div>
+                <input type="text" placeholder="Adicione um comentário...">
+            </div>
+
+            <div class="comment-item">
+                <div class="user-avatar-mini"></div>
+                <div class="comment-text">
+                    <span class="user-name">@DevMaster</span> <span class="time">há 2 horas</span>
+                    <p>Aula incrível! O Flexbox realmente facilita muito a vida de quem faz CSS.</p>
+                </div>
+            </div>
+
+            <div class="comment-item">
+                <div class="user-avatar-mini"></div>
+                <div class="comment-text">
+                    <span class="user-name">@AnaCode</span> <span class="time">há 5 horas</span>
+                    <p>Poderia fazer um vídeo sobre Grid Layout também? Parabéns pelo canal!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="sidebar-scroll">
+        <h3>Sugestões</h3>
+        
+        <div class="video-item-side">
+            <div class="thumb-side"><iframe width="160" height="90" src="https://www.youtube.com/embed/0AtgXbELkXg?si=aQAlHeRksdSZjeQm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="info-side">
+                <h4>CURSOS GRÁTIS Bootcamp DIO </h4>
+                <p>DIO • 500k views</p>
+            </div>
+        </div>
+
+        <div class="video-item-side">
+            <div class="thumb-side"><iframe width="160" height="90" src="https://www.youtube.com/embed/HYF1CUbJzJo?si=FCJLK4449OVRHgJa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="info-side">
+                <h4>MELHOR site para APRENDER PROGRAMAÇÃO  2026</h4>
+                <p>DIO • 1M views</p>
+            </div>
+        </div>
+
+        <div class="video-item-side">
+            <div class="thumb-side"><iframe width="160" height="90" src="https://www.youtube.com/embed/lWEzmo4HgxI?si=X3n5DZNISobmqPfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="info-side">
+                <h4>CCOMO CRIAR conta na DIO.</h4>
+                <p>DIO • 200k views</p>
+            </div>
+        </div>
+
+        <div class="video-item-side">
+            <div class="thumb-side"><iframe width="160" height="90" src="https://www.youtube.com/embed/IpGFoNYJJU8?si=rI9OQzqF_ijZ5EeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="info-side">
+                <h4>Layout com CSS Grid</h4>
+                <p>Web Design • 80k views</p>
+            </div>
+        </div>
+
+         <div class="video-item-side">
+            <div class="thumb-side"><iframe width="160" height="90" src="https://www.youtube.com/embed/28pnf8-o4lk?si=3HekCqkwrPtn0-jK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="info-side">
+                <h4>Aprendendo CSS DISPLAY GRID com um Projeto</h4>
+                <p>Web Design • 80k views</p>
+            </div>
+        </div>
+
+         <div class="video-item-side">
+            <div class="thumb-side"><iframe width="160" height="90" src="https://www.youtube.com/embed/aMwzrczu2FQ?si=bAFxSfcGKbvapsXn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="info-side">
+                <h4>Vale a Pena assinar DIO Global? Te ajudo a decidir</h4>
+                <p>DIO • 80k views</p>
+            </div>
+        </div>
+
+         <div class="video-item-side">
+            <div class="thumb-side"><iframe width="160" height="90" src="https://www.youtube.com/embed/GcNkXrzcB1c?si=q1VdzGxIAuV6DRMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="info-side">
+                <h4>13 bootcamps na DIO até a sua contratação</h4>
+                <p>DIO • 80k views</p>
+            </div>
+        </div>
+
+         <div class="video-item-side">
+            <div class="thumb-side"><iframe width="160" height="90" src="https://www.youtube.com/embed/az2GtK_pwls?si=qeVgFeHNp03cJ7In" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="info-side">
+                <h4>Especial 50.000 Contratados. DIO</h4>
+                <p>DIO • 80k views</p>
+            </div>
+        </div>
+
+         <div class="video-item-side">
+            <div class="thumb-side"><iframe width="160" height="90" src="https://www.youtube.com/embed/0IY5TJwAbcQ?si=BReGG3VLFajDPohS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="info-side">
+                <h4>HTML, CSS e JavaScript. DIO</h4>
+                <p>DIO • 80k views</p>
+            </div>
+        </div>
+
+         <div class="video-item-side">
+            <div class="thumb-side"><iframe width="160" height="90" src="https://www.youtube.com/embed/sBirK_DGM8A?si=jXP-HCXm-8S1XFnP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="info-side">
+                <h4>Desvendando o Poder do JavaScript:</h4>
+                <p>DIO • 80k views</p>
+            </div>
+        </div>
+
+         <div class="video-item-side">
+            <div class="thumb-side"><iframe width="160" height="90" src="https://www.youtube.com/embed/HzrjoNcB5Nc?si=ouvh5T3gqU3goGBh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="info-side">
+                <h4>Compartilhando Minha Experiência no DIO Campus Expert!</h4>
+                <p>DIO • 80k views</p>
+            </div>
+        </div>
+
+         <div class="video-item-side">
+            <div class="thumb-side"><iframe width="160" height="90" src="https://www.youtube.com/embed/RkKSLP_0SN8?si=hiwOZO61Xx596FPx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="info-side">
+                <h4> HTML, CSS e JavaScript | Santander</h4>
+                <p>DIO • 80k views</p>
+            </div>
+        </div>
+        </aside>
+       </section>
+    </main>
+
+</body>
+</html>

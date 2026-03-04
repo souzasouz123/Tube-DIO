@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 56px;
+    background: white;
+    position: sticky;
+    top: 0;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    gap: 4px;
+}
+
+.nav-center {
+    display: flex;
+    flex: 0 1 600px; /* Faz a barra de busca crescer mas ter um limite */
+}
+
+.nav-center input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.nav-center button {
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.user-profile {
+    width: 32px;
+    height: 32px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.container {
+    display: flex;
+    padding: 24px;
+    gap: 24px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.video-player {
+    flex: 3; /* Ocupa 3 partes do espaço */
+}
+
+.video-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.video-list {
+    flex: 1; /* Ocupa 1 parte do espaço */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.side-video {
+    display: flex;
+    gap: 8px;
+}
+
+.thumb {
+    width: 120px;
+    height: 68px;
+    background-color: #ddd;
+    flex-shrink: 0;
+}
+
+.info h4 {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.info p {
+    font-size: 12px;
+    color: #606060;
+}
+
+
+/* CONTAINER PRINCIPAL */
+
+.container {
+    display: flex;
+    padding: 24px;
+    gap: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.main-content {
+    flex: 3;
+}
+
+/* LISTA LATERAL QUE RODA */
+.sidebar-scroll {
+    flex: 1;
+    height: 90vh;        /* Altura fixa para permitir o scroll */
+    overflow-y: auto;   /* Cria a barrinha de rolagem quando necessário */
+    padding-right: 10px;
+}
+
+/* Estilizando a barrinha de rolagem para ficar fina */
+.sidebar-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+/* ITENS DA LISTA */
+.video-item-side {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.thumb-side {
+    width: 160px;
+    height: 90px;
+    background: #444;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.info-side h4 {
+    font-size: 14px;
+    color: #0f0f0f;
+    margin-bottom: 4px;
+}
+
+/* SEÇÃO DE COMENTÁRIOS */
+.comments-section {
+    margin-top: 24px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.add-comment {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.add-comment input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    outline: none;
+}
+
+.comment-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.user-avatar-mini {
+    width: 40px;
+    height: 40px;
+    background: #bbb;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 13px;
+    margin-right: 8px;
+}
+
+.time {
+    font-size: 12px;
+    color: #606060;
+}
+
+.comment-text p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Quando a tela for menor que 1000px (Tablets e Telas Médias) */
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column; /* Coloca a lista lateral abaixo do vídeo */
+        padding: 10px;
+    }
+
+    .sidebar-scroll {
+        width: 100%;       /* Ocupa a largura toda */
+        height: auto;      /* Remove a altura fixa para não precisar de scroll interno */
+        overflow-y: visible; 
+    }
+
+    .nav-center {
+        flex: 1;           /* Diminui o espaço da busca */
+        margin: 0 10px;
+    }
+}
+
+/* Quando a tela for menor que 600px (Celulares) */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0 8px;
+    }
+
+    /* Esconde a barra de busca para dar espaço ao logo no celular (como o App faz) */
+    /* Ou você pode apenas diminuir os ícones */
+    .nav-center {
+        display: none; 
+    }
+
+    .nav-right i:not(:last-child) {
+        display: none; /* Esconde alguns ícones no topo para não amontoar */
+    }
+
+    .thumb-side {
+        width: 120px; /* Miniaturas menores no celular */
+        height: 70px;
+    }
+
+    .main-title {
+        font-size: 18px; /* Texto menor para caber na tela do celular */
+    }
+}
